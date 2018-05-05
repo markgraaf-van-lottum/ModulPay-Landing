@@ -1,0 +1,24 @@
+<svg width="1440" height="516" viewBox="0 0 1440 516" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="Canvas" fill="none">
+<g id="Group 16">
+<path id="Rectangle 4" d="M 0 2.23286L 1313.5 0L 750.631 493.984C 747 497.171 742.339 498.936 737.508 498.952L 0 501.5L 0 2.23286Z" transform="translate(0 -2.5)" fill="#F9FBFF"/>
+<g id="Rectangle" transform="matrix(0 -1 -1 0 1440 516)">
+<path d="M 0 0L 516 0L 516 821L 445.666 821C 418.942 821 394.55 805.784 382.798 781.783L 0 0Z" fill="#D3D808"/>
+<path d="M 0 0L 516 0L 516 821L 445.666 821C 418.942 821 394.55 805.784 382.798 781.783L 0 0Z" fill="url(#paint0_linear)"/>
+</g>
+<rect id="Rectangle 3" width="262" height="262" rx="70" transform="matrix(0.707107 -0.707107 0.707107 0.707107 994 119.262)" fill="url(#paint1_linear)" fill-opacity="0.4"/>
+<rect id="Rectangle 2" x="-3" y="-3" width="52" height="52" rx="8" transform="matrix(0.707107 0.707107 -0.707107 0.707107 1335.53 113)" stroke="white" stroke-opacity="0.3" stroke-width="6"/>
+<rect id="Rectangle 2.1" x="2" y="2" width="20.0417" height="20.0417" rx="3" transform="matrix(0.707107 0.707107 -0.707107 0.707107 816 347)" stroke="#5AACC6" stroke-opacity="0.24" stroke-width="4"/>
+</g>
+</g>
+<defs>
+<linearGradient id="paint0_linear" x2="1" gradientUnits="userSpaceOnUse" gradientTransform="matrix(-504 -339.203 266.464 -462.029 382.768 756.022)">
+<stop stop-color="#58C0BA"/>
+<stop offset="1" stop-color="#5E81DE"/>
+</linearGradient>
+<linearGradient id="paint1_linear" x2="1" gradientUnits="userSpaceOnUse" gradientTransform="matrix(-93 138 -138 -93 167.5 170.5)">
+<stop stop-color="white" stop-opacity="0"/>
+<stop offset="1" stop-color="white" stop-opacity="0.2"/>
+</linearGradient>
+</defs>
+</svg>
