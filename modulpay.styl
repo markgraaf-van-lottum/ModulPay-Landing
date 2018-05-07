@@ -1,0 +1,495 @@
+@import 'nib'
+@import 'variables.styl'
+
+// Common
+::-webkit-scrollbar
+	height 12px
+	width 12px
+	background transparent
+::-webkit-scrollbar-thumb
+	border-radius 10px
+	cursor pointer
+	width 12px
+	cursor pointer
+	border 3px solid rgba(255, 255, 255, 0)
+	background-clip padding-box
+	background-color rgba(cbgdark, .3)
+	&:hoverol
+		background-color rgba(cl1, .4)
+		cursor pointer
+
+*
+	margin 0
+	padding 0
+	vertical-align baseline
+	outline none
+	-webkit-text-size-adjust none
+
+body
+	overflow auto
+	-webkit-overflow-scrolling touch
+
+div
+footer
+section
+	position relative
+
+
+
+html
+body	
+	font-family ffn
+	font-size 14px
+	color #000
+	background #FFF
+	-webkit-font-smoothing antialiased
+	-moz-osx-font-smoothing grayscale
+	-webkit-text-size-adjust none
+
+flex
+	display flex
+h1
+h2
+.slogan
+	font-family Roboto Slab
+	color #243036
+h1
+	font-size 48px
+	font-weight bold
+h2
+	font-size 32px
+	text-align center
+	font-weight normal
+	margin-bottom 56px
+a
+	cursor pointer
+	text-decoration none
+
+.button
+	color #FFF
+	font-size 16px
+	font-weight bold
+	border-radius 60px
+	letter-spacing 0.05em
+	text-transform uppercase
+	&:hover
+		color #FFF
+
+// Шапка
+.page_header
+	padding 32px 0 !important
+	.logo
+		display inline-block
+		width 160px
+		height 30px
+		margin-right auto
+		background url(img/modulpay_logo.svg) no-repeat
+	a
+		color #FFF
+		text-transform uppercase
+		font-weight 500
+		box-sizing border-box
+		padding 10px 22px
+
+section
+	max-width 1440px
+	margin auto
+	cursor default
+	padding-left 20px !important
+	padding-right 20px !important
+
+.section_content
+	max-width 1000px
+	margin auto
+
+	// Заголовки
+	.title
+		font-size 18px
+		font-weight 500
+	.text
+		margin-top 12px
+		line-height 1.5em
+
+
+// Секция 1
+.section1
+	padding-bottom 100px
+	background url(img/bg__section1.svg) 50% 0 no-repeat
+	overflow hidden
+	
+	// Треугольник на фоне
+	&::after
+		content ""
+		display block
+		position absolute
+		width 1440px
+		top 0
+		bottom 0
+		left calc(50% - 1440px/2)
+		pointer-events none
+		background url(img/bg__section1--triangle.svg) 99% 100% no-repeat
+	
+	.page_header + .section_content
+		padding-top 120px
+		background url(img/iphonex.png) 92% 0 no-repeat
+		background-size 283px auto
+	h1
+		margin-bottom 4px
+	h2
+		margin-top 240px
+	.slogan
+		font-size 36px
+	.buttons
+		margin-top 56px
+		.button
+			background #394B56
+			box-shadow 0 4px 8px rgba(36, 48, 54, .36)
+			padding 16px 40px
+			transition box-shadow .3s
+			&:hover
+				box-shadow 0 4px 8px rgba(36, 48, 54, .12)
+	
+	.tiles_features
+		& > div
+			flex 1 1
+			background #FFF no-repeat
+			background-position 50% 34px
+			box-shadow 0 13px 27px rgba(49, 55, 72, .09)
+			border-radius 4px
+			padding 122px 32px 32px				
+
+		.tile_no-queue
+			background-image url(img/icon_no-queue.svg)
+		.tile_cost-free
+			margin 0 32px
+			background-image url(img/icon_cost-free.svg)
+		.tile_cashier-free
+			background-image url(img/icon_cashier-free.svg)
+			background-position-y 30px
+		
+
+// Секция 2 (Область применения)
+.section2
+	.usage
+		justify-content space-between
+ 		
+		& > div
+			width 280px
+			text-align center
+		i
+			display block
+			width 80px
+			height 80px
+			margin 0 auto 28px
+			border 4px solid rgba(90,172,198,.24)
+			border-radius 10px
+			background no-repeat center
+		.text
+			color #717D83
+		.loyalty i
+			background-image url(img/icon_loyalty.svg)
+		.promos i
+			background-image url(img/icon_promos.svg)
+		.cashback i
+			background-image url(img/icon_cashback.svg)
+
+
+// Секция 3 (Как это работает)
+.section3
+	margin-top 90px
+
+	.steps
+		display flex
+		background linear-gradient(135deg, #C0F1EE 0%, #D6E0FD 100%), #D3D808
+		border-radius 2px
+
+		.item
+			width 33.33%
+			padding 32px 20px 30px 55px
+			&:not(:last-child):after
+				content ''
+				width 52px
+				height 100%
+				position absolute
+				top 0
+				right -20px
+				background url(img/step_arrow.svg) no-repeat center center
+			&:before
+				content '1'
+				position absolute
+				top 14px
+				left 20px
+				color #FFF
+				font-size 36px
+				font-weight 500
+			&:nth-child(2)
+			&:nth-child(3)
+				padding-left 66px
+				&:before
+					content '2'
+					left 30px
+			&:nth-child(3):before
+				content '3'
+
+			.item_desc
+				color #2B2B2B
+				font-size 16px
+				line-height 1.4
+
+
+// Секция 4 (Заказать звонок)
+.section4
+	margin 96px 0
+	.section_content
+		padding 40px 0 100px 260px
+		box-sizing border-box
+		background url(img/bg__section_callback.svg) 50px 0 no-repeat
+		h2
+			margin-bottom 30px
+			text-align left
+		.description
+			width 648px
+			font-size 18px
+			line-height 30px
+			color #717D83
+		
+		// Заказать звонок
+		.call_order
+			width 450px
+			height 60px
+			margin-top 36px
+			padding 20px 0 0 26px
+			background #FFF
+			box-shadow 0 8px 24px #F1F1F1, 0 14px 44px #F5F5F6
+			border-radius 40px
+			box-sizing border-box
+			
+			::-webkit-input-placeholder
+				color #CBCFD1
+			::-moz-placeholder
+				color #CBCFD1
+			:-ms-input-placeholder
+				color #CBCFD1 !important
+			input
+				font-size 18px
+				border none
+			
+			.button
+				position absolute
+				top 0
+				right 0
+				bottom 0
+				padding 21px 32px 20px
+				background linear-gradient(270deg, #5E81DE 0%, #58C0BA 100%), #D3D808
+
+
+// Подвал
+.footer
+	background #F9FBFF
+	padding 44px 0
+	.section_content
+		justify-content space-between
+	.contact_info
+		margin-top -2px
+		h2
+			margin-bottom 6px
+			font-weight 300
+		p
+			font-size 18px
+			font-weight 300
+	.footer_links
+		margin 0 80px 0 auto
+		p:not(:last-child)
+			margin-bottom 16px
+		a
+			display inline-block
+			color #9DA6AA
+			line-height 1.3
+			border-bottom 1px solid
+			transition color .3s
+			&:hover
+				color #8b9396
+	.mobile_apps_links
+		a
+			display block
+			width 145px
+			height 44px
+			&:first-child
+				background url(img/appstore.svg) no-repeat
+				margin-bottom 12px
+			&:last-child
+				background url(img/google_play.svg) no-repeat
+
+
+// Общие стили для попапа
+// ОВЕРЛЕЙ
+.popup_overlay
+	position absolute
+	left 0
+	top 0
+	overflow auto
+	height 100%
+	width 100%
+	background rgba(cl1,.34)
+	z-index 3000
+	animation popupOverlayOpen .2s linear both
+	-webkit-overflow-scrolling touch
+
+// СЛОЙ ПОД ПОПАПОМ
+.popup_backdrop
+	position absolute
+	top 0
+	left 0
+	width 100%
+	height 100%
+	z-index 0
+
+// ВЫРАВНИВАНИЕ ПОПАПА ПО ЦЕНТРУ ТАБЛИЦЕЙ
+.popup_table
+	display table
+	width 100%
+	height 100%
+.popup_cell
+	display table-cell
+	vertical-align middle
+	padding 20px 0
+	text-align center
+
+//=== АДАПТИВНОСТЬ Попапа
+@media screen and (max-width: 980px)
+	.popup_overlay
+		position fixed
+		min-width 320px
+		transform translateZ(1px)
+	.popup_table
+		position absolute
+	.popup_cell
+		padding 0
+		width 100%
+		height 100%
+		overflow auto
+		-webkit-overflow-scrolling touch
+	.popup_layer
+		box-sizing border-box
+		-webkit-text-size-adjust 100%
+		box-shadow none
+
+
+// Попап "Обратный звонок"
+.popup__callback_order
+	width 560px
+	margin 0 auto
+	text-align center
+	padding 80px 140px
+	background #FFF
+	color #2B2B2B
+	z-index 10
+	box-shadow 6px 6px 0 rgba(cl1, .2)
+	box-sizing border-box
+	cursor default
+
+	.popup_close
+		position absolute
+		right 16px
+		top 16px
+		z-index 2000
+		color ctextlight
+		font-size 14px
+		text-decoration none
+		&:hover
+			color ctext
+
+	.title
+		font-size 22px
+		margin-bottom 50px
+		line-height 1.4
+	input
+		width 100%
+		color #555
+		font-size 16px
+		padding 15px
+		box-sizing border-box
+		background rgba(0,0,0,.04)
+		border none
+	.button_wrap
+		margin-top 20px
+	.button
+		display inline-block
+		width 100%
+		padding 16px 0
+		border-radius 0
+		background linear-gradient(270deg, #5E81DE 0%, #58C0BA 100%), #D3D808
+
+
+// Иконка "Телефон" и "Крестик"
+.icon-phone
+.icon-close
+	font-family "mb-icon-font-3" !important
+	font-style normal !important
+	font-weight normal !important
+	font-variant normal !important
+	text-transform none !important
+	speak none
+	line-height 1
+	-webkit-font-smoothing antialiased
+	-moz-osx-font-smoothing grayscale
+.icon-phone::before
+	content "\e007"
+	display block
+	font-size 28px
+	margin-bottom 16px
+.icon-close::before
+	content "\77"
+
+
+// АДАПТИВНОСТЬ
+@media screen and (max-width: 900px)
+	.section1
+		.tiles_features
+			.tile_cost-free
+				margin 0 20px
+			> div
+				text-align center
+
+@media screen and (max-width: 760px)
+	h2
+		font-size 28px
+		margin-bottom 36px
+	.section_content
+		.title
+			font-size 20px
+		.text
+			font-size 16px
+
+	.section1
+		padding-bottom 70px
+		.tiles_features
+			 display block
+			> div
+				width 440px
+				margin auto
+				padding-top 110px
+				box-shadow 0 0 8px 2px rgba(49, 55, 72, .09)
+				text-align center
+			.tile_cost-free
+				margin 32px auto
+
+	.section2
+		.usage
+			display block
+			> div
+				margin auto
+			.promos
+				margin 32px auto
+
+
+// @media screen and (max-width: 564px)
+
+
+
+
+
+
+
+
+

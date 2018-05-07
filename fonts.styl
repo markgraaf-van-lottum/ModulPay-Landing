@@ -1,0 +1,78 @@
+@import 'nib'
+@require 'variables.styl'
+
+
+// Вес шрифта:
+// 100	Тонкий (Волосяной) Thin (Hairline)
+// 200	Дополнительный светлый (Сверхсветлый) Extra Light (Ultra Light)
+// 300	Светлый Light
+// 400	Нормальный Normal
+// 500	Средний Medium
+// 600	Полужирный Semi Bold (Demi Bold)
+// 700	Жирный Bold
+// 800	Дополнительный жирный (Сверхжирный) Extra Bold (Ultra Bold)
+// 900	Черный (Густой) Black (Heavy)
+
+
+
+//==========================================================================================
+// Mixin
+//==========================================================================================
+font-woff(fontPath, fontName, fontType = 'Regular')
+	$path = fontPath + fontName + '-' + fontType
+
+	font-family fontName
+	src url($path + '.woff2') format('woff2'), url($path + '.woff') format('woff')
+
+//==========================================================================================
+// ИКОНОЧНЫЙ ШРИФТ
+//==========================================================================================
+@font-face
+	font-family "mb-icon-font-3"
+	src url("fonts/icons/mb-icon-font-3.woff") format("woff")
+	font-weight normal
+	font-style normal
+
+
+
+//==========================================================================================
+// Roboto v2.137
+//==========================================================================================
+// Если понадобится обновить шрифт Roboto, то мы используем вес шрифта 300, 400, 500, 700
+
+fontPath = "fonts/roboto/"
+fontName = "Roboto"
+
+
+// Light
+@font-face
+	font-woff(fontPath, fontName, "Light")
+	font-weight 300
+	font-style normal
+
+// Regular
+@font-face
+	font-woff(fontPath, fontName, "Regular")
+	font-weight 400
+	font-style normal
+@font-face
+	font-woff(fontPath, fontName, "Regular")
+	font-weight normal
+	font-style normal
+
+//Medium
+@font-face
+	font-woff(fontPath, fontName, "Medium")
+	font-weight 500
+	font-style normal
+
+//Bold
+@font-face
+	font-woff(fontPath, fontName, "Bold")
+	font-weight 700
+	font-style normal
+
+@font-face
+	font-woff(fontPath, fontName, "Bold")
+	font-weight bold
+	font-style normal

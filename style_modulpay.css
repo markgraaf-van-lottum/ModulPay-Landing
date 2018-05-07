@@ -1,104 +1,43 @@
 @charset "utf-8";
-@charset "utf-8";
 @font-face {
   font-family: "mb-icon-font-3";
-  src: url("../../../Markup.Common/markup/fonts/icons/mb-icon-font-3.woff") format("woff");
+  src: url("fonts/icons/mb-icon-font-3.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: "Roboto";
-  src: url("../../../Markup.Common/markup/fonts/roboto/Roboto-Light.woff2") format('woff2'), url("../../../Markup.Common/markup/fonts/roboto/Roboto-Light.woff") format('woff');
+  src: url("fonts/roboto/Roboto-Light.woff2") format('woff2'), url("fonts/roboto/Roboto-Light.woff") format('woff');
   font-weight: 300;
   font-style: normal;
 }
 @font-face {
   font-family: "Roboto";
-  src: url("../../../Markup.Common/markup/fonts/roboto/Roboto-LightItalic.woff2") format('woff2'), url("../../../Markup.Common/markup/fonts/roboto/Roboto-LightItalic.woff") format('woff');
-  font-weight: 300;
-  font-style: italic;
-}
-@font-face {
-  font-family: "Roboto";
-  src: url("../../../Markup.Common/markup/fonts/roboto/Roboto-Regular.woff2") format('woff2'), url("../../../Markup.Common/markup/fonts/roboto/Roboto-Regular.woff") format('woff');
+  src: url("fonts/roboto/Roboto-Regular.woff2") format('woff2'), url("fonts/roboto/Roboto-Regular.woff") format('woff');
   font-weight: 400;
   font-style: normal;
 }
 @font-face {
   font-family: "Roboto";
-  src: url("../../../Markup.Common/markup/fonts/roboto/Roboto-Regular.woff2") format('woff2'), url("../../../Markup.Common/markup/fonts/roboto/Roboto-Regular.woff") format('woff');
+  src: url("fonts/roboto/Roboto-Regular.woff2") format('woff2'), url("fonts/roboto/Roboto-Regular.woff") format('woff');
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: "Roboto";
-  src: url("../../../Markup.Common/markup/fonts/roboto/Roboto-Italic.woff2") format('woff2'), url("../../../Markup.Common/markup/fonts/roboto/Roboto-Italic.woff") format('woff');
-  font-weight: 400;
-  font-style: italic;
-}
-@font-face {
-  font-family: "Roboto";
-  src: url("../../../Markup.Common/markup/fonts/roboto/Roboto-Italic.woff2") format('woff2'), url("../../../Markup.Common/markup/fonts/roboto/Roboto-Italic.woff") format('woff');
-  font-weight: normal;
-  font-style: italic;
-}
-@font-face {
-  font-family: "Roboto";
-  src: url("../../../Markup.Common/markup/fonts/roboto/Roboto-Medium.woff2") format('woff2'), url("../../../Markup.Common/markup/fonts/roboto/Roboto-Medium.woff") format('woff');
+  src: url("fonts/roboto/Roboto-Medium.woff2") format('woff2'), url("fonts/roboto/Roboto-Medium.woff") format('woff');
   font-weight: 500;
   font-style: normal;
 }
 @font-face {
   font-family: "Roboto";
-  src: url("../../../Markup.Common/markup/fonts/roboto/Roboto-MediumItalic.woff2") format('woff2'), url("../../../Markup.Common/markup/fonts/roboto/Roboto-MediumItalic.woff") format('woff');
-  font-weight: 500;
-  font-style: italic;
-}
-@font-face {
-  font-family: "Roboto";
-  src: url("../../../Markup.Common/markup/fonts/roboto/Roboto-Bold.woff2") format('woff2'), url("../../../Markup.Common/markup/fonts/roboto/Roboto-Bold.woff") format('woff');
+  src: url("fonts/roboto/Roboto-Bold.woff2") format('woff2'), url("fonts/roboto/Roboto-Bold.woff") format('woff');
   font-weight: 700;
   font-style: normal;
 }
 @font-face {
   font-family: "Roboto";
-  src: url("../../../Markup.Common/markup/fonts/roboto/Roboto-Bold.woff2") format('woff2'), url("../../../Markup.Common/markup/fonts/roboto/Roboto-Bold.woff") format('woff');
-  font-weight: bold;
-  font-style: normal;
-}
-@font-face {
-  font-family: "Roboto";
-  src: url("../../../Markup.Common/markup/fonts/roboto/Roboto-BoldItalic.woff2") format('woff2'), url("../../../Markup.Common/markup/fonts/roboto/Roboto-BoldItalic.woff") format('woff');
-  font-weight: 700;
-  font-style: italic;
-}
-@font-face {
-  font-family: "Roboto";
-  src: url("../../../Markup.Common/markup/fonts/roboto/Roboto-BoldItalic.woff2") format('woff2'), url("../../../Markup.Common/markup/fonts/roboto/Roboto-BoldItalic.woff") format('woff');
-  font-weight: bold;
-  font-style: italic;
-}
-@font-face {
-  font-family: 'Ruble';
-  src: url("../../../Markup.Common/markup/fonts/ruble/PTRouble-Regular.woff") format('woff');
-  font-weight: 400;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'Ruble';
-  src: url("../../../Markup.Common/markup/fonts/ruble/PTRouble-Light.woff") format('woff');
-  font-weight: 200;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'Ruble';
-  src: url("../../../Markup.Common/markup/fonts/ruble/PTRouble-Medium.woff") format('woff');
-  font-weight: 500;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'Ruble';
-  src: url("../../../Markup.Common/markup/fonts/ruble/PTRouble-Bold.woff") format('woff');
+  src: url("fonts/roboto/Roboto-Bold.woff2") format('woff2'), url("fonts/roboto/Roboto-Bold.woff") format('woff');
   font-weight: bold;
   font-style: normal;
 }
@@ -170,11 +109,12 @@ h1 {
 h2 {
   font-size: 32px;
   text-align: center;
+  font-weight: normal;
   margin-bottom: 56px;
 }
 a {
-  text-decoration: none;
   cursor: pointer;
+  text-decoration: none;
 }
 .button {
   color: #fff;
@@ -366,7 +306,7 @@ section {
   position: absolute;
   top: 0;
   right: -20px;
-  background: url("../../../Markup.Common/markup/images/services/activation_step_arrow.svg") no-repeat center center;
+  background: url("img/step_arrow.svg") no-repeat center center;
 }
 .section3 .steps .item:before {
   content: '1';
@@ -650,5 +590,51 @@ section {
 }
 .icon-close::before {
   content: "\77";
+}
+@media screen and (max-width: 900px) {
+  .section1 .tiles_features .tile_cost-free {
+    margin: 0 20px;
+  }
+  .section1 .tiles_features > div {
+    text-align: center;
+  }
+}
+@media screen and (max-width: 760px) {
+  h2 {
+    font-size: 28px;
+    margin-bottom: 36px;
+  }
+  .section_content .title {
+    font-size: 20px;
+  }
+  .section_content .text {
+    font-size: 16px;
+  }
+  .section1 {
+    padding-bottom: 70px;
+  }
+  .section1 .tiles_features {
+    display: block;
+  }
+  .section1 .tiles_features > div {
+    width: 440px;
+    margin: auto;
+    padding-top: 110px;
+    -webkit-box-shadow: 0 0 8px 2px rgba(49,55,72,0.09);
+    box-shadow: 0 0 8px 2px rgba(49,55,72,0.09);
+    text-align: center;
+  }
+  .section1 .tiles_features .tile_cost-free {
+    margin: 32px auto;
+  }
+  .section2 .usage {
+    display: block;
+  }
+  .section2 .usage > div {
+    margin: auto;
+  }
+  .section2 .usage .promos {
+    margin: 32px auto;
+  }
 }
 /*# sourceMappingURL=style_modulpay.css.map */
