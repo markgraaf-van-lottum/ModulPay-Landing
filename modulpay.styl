@@ -267,7 +267,9 @@ section
 			box-shadow 0 8px 24px #F1F1F1, 0 14px 44px #F5F5F6
 			border-radius 40px
 			box-sizing border-box
-			
+			&.error
+				box-shadow inset 0 0 2px #E54D4D
+				background-color #FFE6E6
 			::-webkit-input-placeholder
 				color #CBCFD1
 			::-moz-placeholder
@@ -277,6 +279,7 @@ section
 			input
 				font-size 18px
 				border none
+				background none
 			
 			.button
 				position absolute
@@ -289,7 +292,7 @@ section
 
 // Подвал
 .footer
-	background #F9FBFF
+	background #F4F7FD
 	padding 44px 0
 	.section_content
 		justify-content space-between
@@ -589,8 +592,11 @@ section
 			background-position 56% 310px
 		h2
 			margin-top 600px
+	.section4
+		margin 70px 0
 	.footer
-		padding-bottom 20px
+		padding-top 32px
+		padding-bottom 10px
 		.section_content
 			flex-wrap wrap
 		.contact_info
@@ -610,9 +616,7 @@ section
 			display inline-block
 			&:first-child
 				margin 0 8px 0 0
-	
-	.section4
-		margin 70px 0
+
 
 @media screen and (max-width: 650px)
 	.section1
@@ -636,6 +640,8 @@ section
 	.section2 .usage > div
 		padding 0
 	.footer
+		padding-top 20px
+		padding-bottom 0
 		.contact_info
 			width 100%
 			margin 0 0 20px
@@ -648,12 +654,15 @@ section
 			text-align center
 
 @media screen and (max-width: 550px)
+	.page_header a
+		padding 10px 14px
 	.section1
 		h1
 			font-size 32px
 		.tiles_features > div
 			width auto
 	.footer
+		padding-bottom 10px
 		.contact_info
 			margin-bottom 30px
 		.footer_links
@@ -691,8 +700,6 @@ section
 			.button
 				font-size 14px
 				padding 18px 24px
-	.footer
-		padding-bottom 10px
 
 @media screen and (max-width: 444px)
 	h2
@@ -704,12 +711,28 @@ section
 	.section1
 		padding-bottom 40px
 		background-position-x 44%
+		background-position 40% -10px
 		h1
 			font-size 30px
 		.slogan
 			font-size 22px
-		.page_header + .section_content
-			background-position-x 74%
+		.page_header
+			position relative
+			.logo
+				width 160px
+				height 28px
+			a.mobile
+				position absolute
+				top 32px
+				right 10px
+				font-size 14px
+				padding 0
+				border-bottom 1px solid
+				&:last-child
+					top 70px
+			& + .section_content
+				background-position 100% 250px
+				padding-top 68px
 		.tiles_features
 			> div
 				box-shadow none
@@ -719,22 +742,53 @@ section
 				margin 12px auto
 			.text
 				color #717D83
-	.section4 .section_content .description
-		font-size 16px
-		line-height 24px
+	.section4
+		margin-bottom 110px
+		.section_content
+			.description
+				font-size 16px
+				line-height 24px
+			.call_order
+				width 200px
+				height 48px
+				margin-top 24px
+				padding 14px 20px
+				box-shadow 0 0 4px #D8D8D8
+				.button
+					top 130%
+					left 0
+					height 48px
+					padding 16px
+					text-align center
+					box-sizing border-box
 
 @media screen and (max-width: 375px)
 	h2
 		font-size 22px
-	
 	.section_content .title
 		font-size 18px
 	.section1
 		padding-bottom 40px
+		background-position 40% -10px
 		h2
 			margin-top 590px
-		.page_header + .section_content
-			background-position 100% 250px
+		.page_header
+			position relative
+			.logo
+				width 160px
+				height 28px
+			a.mobile
+				position absolute
+				top 32px
+				right 10px
+				font-size 14px
+				padding 0
+				border-bottom 1px solid
+				&:last-child
+					top 70px
+			& + .section_content
+				background-position 100% 250px
+				padding-top 68px
 		.buttons
 			margin-top 40px
 			.button

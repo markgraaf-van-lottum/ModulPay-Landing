@@ -374,6 +374,11 @@ section {
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
+.section4 .section_content .call_order.error {
+  -webkit-box-shadow: inset 0 0 2px #e54d4d;
+  box-shadow: inset 0 0 2px #e54d4d;
+  background-color: #ffe6e6;
+}
 .section4 .section_content .call_order ::-webkit-input-placeholder {
   color: #cbcfd1;
 }
@@ -386,6 +391,7 @@ section {
 .section4 .section_content .call_order input {
   font-size: 18px;
   border: none;
+  background: none;
 }
 .section4 .section_content .call_order .button {
   position: absolute;
@@ -400,7 +406,7 @@ section {
   background: linear-gradient(270deg, #5e81de 0%, #58c0ba 100%), #d3d808;
 }
 .footer {
-  background: #f9fbff;
+  background: #f4f7fd;
   padding: 44px 0;
 }
 .footer .section_content {
@@ -778,8 +784,12 @@ section {
   .section1 h2 {
     margin-top: 600px;
   }
+  .section4 {
+    margin: 70px 0;
+  }
   .footer {
-    padding-bottom: 20px;
+    padding-top: 32px;
+    padding-bottom: 10px;
   }
   .footer .section_content {
     -webkit-box-lines: multiple;
@@ -832,9 +842,6 @@ section {
   .footer .mobile_apps_links a:first-child {
     margin: 0 8px 0 0;
   }
-  .section4 {
-    margin: 70px 0;
-  }
 }
 @media screen and (max-width: 650px) {
   .section1 {
@@ -865,6 +872,10 @@ section {
   .section2 .usage > div {
     padding: 0;
   }
+  .footer {
+    padding-top: 20px;
+    padding-bottom: 0;
+  }
   .footer .contact_info {
     width: 100%;
     margin: 0 0 20px;
@@ -880,11 +891,17 @@ section {
   }
 }
 @media screen and (max-width: 550px) {
+  .page_header a {
+    padding: 10px 14px;
+  }
   .section1 h1 {
     font-size: 32px;
   }
   .section1 .tiles_features > div {
     width: auto;
+  }
+  .footer {
+    padding-bottom: 10px;
   }
   .footer .contact_info {
     margin-bottom: 30px;
@@ -944,9 +961,6 @@ section {
     font-size: 14px;
     padding: 18px 24px;
   }
-  .footer {
-    padding-bottom: 10px;
-  }
 }
 @media screen and (max-width: 444px) {
   h2 {
@@ -960,6 +974,7 @@ section {
   .section1 {
     padding-bottom: 40px;
     background-position-x: 44%;
+    background-position: 40% -10px;
   }
   .section1 h1 {
     font-size: 30px;
@@ -967,8 +982,27 @@ section {
   .section1 .slogan {
     font-size: 22px;
   }
+  .section1 .page_header {
+    position: relative;
+  }
+  .section1 .page_header .logo {
+    width: 160px;
+    height: 28px;
+  }
+  .section1 .page_header a.mobile {
+    position: absolute;
+    top: 32px;
+    right: 10px;
+    font-size: 14px;
+    padding: 0;
+    border-bottom: 1px solid;
+  }
+  .section1 .page_header a.mobile:last-child {
+    top: 70px;
+  }
   .section1 .page_header + .section_content {
-    background-position-x: 74%;
+    background-position: 100% 250px;
+    padding-top: 68px;
   }
   .section1 .tiles_features > div {
     -webkit-box-shadow: none;
@@ -982,9 +1016,30 @@ section {
   .section1 .tiles_features .text {
     color: #717d83;
   }
+  .section4 {
+    margin-bottom: 110px;
+  }
   .section4 .section_content .description {
     font-size: 16px;
     line-height: 24px;
+  }
+  .section4 .section_content .call_order {
+    width: 200px;
+    height: 48px;
+    margin-top: 24px;
+    padding: 14px 20px;
+    -webkit-box-shadow: 0 0 4px #d8d8d8;
+    box-shadow: 0 0 4px #d8d8d8;
+  }
+  .section4 .section_content .call_order .button {
+    top: 130%;
+    left: 0;
+    height: 48px;
+    padding: 16px;
+    text-align: center;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
   }
 }
 @media screen and (max-width: 375px) {
@@ -996,12 +1051,32 @@ section {
   }
   .section1 {
     padding-bottom: 40px;
+    background-position: 40% -10px;
   }
   .section1 h2 {
     margin-top: 590px;
   }
+  .section1 .page_header {
+    position: relative;
+  }
+  .section1 .page_header .logo {
+    width: 160px;
+    height: 28px;
+  }
+  .section1 .page_header a.mobile {
+    position: absolute;
+    top: 32px;
+    right: 10px;
+    font-size: 14px;
+    padding: 0;
+    border-bottom: 1px solid;
+  }
+  .section1 .page_header a.mobile:last-child {
+    top: 70px;
+  }
   .section1 .page_header + .section_content {
     background-position: 100% 250px;
+    padding-top: 68px;
   }
   .section1 .buttons {
     margin-top: 40px;
