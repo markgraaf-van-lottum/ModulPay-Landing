@@ -81,7 +81,6 @@ a
 	.logo
 		display inline-block
 		width 160px
-		height 30px
 		margin-right auto
 		background url(img/modulpay_logo.svg) no-repeat
 	a
@@ -303,9 +302,11 @@ section
 			font-size 18px
 			font-weight 300
 	.footer_links
-		margin 0 80px 0 auto
-		p:not(:last-child)
-			margin-bottom 16px
+		margin 0 auto
+		p
+			white-space nowrap
+			&:not(:last-child)
+				margin-bottom 16px
 		a
 			display inline-block
 			color #9DA6AA
@@ -457,9 +458,7 @@ section
 		&:not(.mobile):not(.logo)
 			display none
 		&.mobile
-			display inline-block
-			&:last-child
-				padding-right 15%
+			display block
 
 @media screen and (max-width: 900px)
 	h2
@@ -474,8 +473,6 @@ section
 @media screen and (max-width: 850px)
 	h1
 		font-size 44px
-	// .page_header a
-		// padding 10px 20px
 	.section1
 		.slogan
 			font-size 32px
@@ -510,6 +507,8 @@ section
 				text-align center
 			.tile_cost-free
 				margin 32px auto
+		&::after
+			display none
 
 	.section2
 		.usage
@@ -551,6 +550,7 @@ section
 			.description
 				width auto
 				text-align center
+				padding 0
 			.call_order
 				margin 36px auto 0
 	
@@ -560,12 +560,11 @@ section
 		.footer_links
 			margin 0 auto
 
-
 @media screen and (max-width: 722px)
 	.section3
 		.steps
 			flex-flow column
-			width 375px
+			max-width 375px
 			margin auto
 			.item
 				width 100%
@@ -583,21 +582,161 @@ section
 				&:nth-child(3)
 					padding-bottom 25px
 
-
 @media screen and (max-width: 690px)
 	.section1
 		.page_header + .section_content
 			padding-top 80px
 			background-position 56% 310px
+		h2
+			margin-top 600px
+	.footer
+		padding-bottom 20px
+		.section_content
+			flex-wrap wrap
+		.contact_info
+			margin-right 20px
+			h2
+				font-size 26px
+		.footer_links
+			width 100%
+			margin-top 30px
+			display flex
+			justify-content space-between
+			flex-wrap wrap
+			order 1
+			p
+				display inline-block
+		.mobile_apps_links a
+			display inline-block
+			&:first-child
+				margin 0 8px 0 0
+	
+	.section4
+		margin 70px 0
 
+@media screen and (max-width: 650px)
+	.section1
+		background-position-x 42%
+		h1
+			font-size 34px
+		.slogan
+			font-size 24px
+		.buttons
+			margin-top 48px
+			.button
+				font-size 14px
+				padding 15px 30px
 
-// @media screen and (max-width: 564px)
+@media screen and (max-width: 586px)
+	.section1
+		background-position-x 45%
+		.tiles_features > div
+			padding-left 20px
+			padding-right 20px
+	.section2 .usage > div
+		padding 0
+	.footer
+		.contact_info
+			width 100%
+			margin 0 0 20px
+			text-align center
+			h2
+				font-size 31px
+				text-align center
+		.mobile_apps_links
+			width 100%
+			text-align center
 
+@media screen and (max-width: 550px)
+	.section1
+		h1
+			font-size 32px
+		.tiles_features > div
+			width auto
+	.footer
+		.contact_info
+			margin-bottom 30px
+		.footer_links
+			text-align center
+			p
+				width 100%
+				&:nth-child(2)
+					order 1
+					margin-top 16px
 
+@media screen and (max-width: 500px)
+	h2
+		font-size 24px
+	.page_header
+		padding 24px 0 !important
+		.logo
+			width 128px
+			background-position 0 center
+			background-size contain
+		a
+			padding 10px
+	.section1
+		background-position-y -24px
+		h2
+			margin-top 630px
+		.page_header + .section_content
+			background-position 64% 280px
+			padding-top 60px
+	.section4
+		margin-bottom 50px
+		.section_content .call_order
+			width 380px
+			height 52px
+			padding 16px 0 0 24px
+			.button
+				font-size 14px
+				padding 18px 24px
+	.footer
+		padding-bottom 10px
 
+@media screen and (max-width: 444px)
+	h2
+		margin-bottom 30px
+	.page_header a
+		padding 10px
+		padding-right 5px
+		font-size 13px
+	.section1
+		padding-bottom 40px
+		background-position-x 44%
+		h1
+			font-size 30px
+		.slogan
+			font-size 22px
+		.page_header + .section_content
+			background-position-x 74%
+		.tiles_features
+			> div
+				box-shadow none
+				padding 76px 10px 30px
+				background-position-y 0 !important
+			.tile_cost-free
+				margin 12px auto
+			.text
+				color #717D83
+	.section4 .section_content .description
+		font-size 16px
+		line-height 24px
 
-
-
-
-
-
+@media screen and (max-width: 375px)
+	h2
+		font-size 22px
+	
+	.section_content .title
+		font-size 18px
+	.section1
+		padding-bottom 40px
+		h2
+			margin-top 590px
+		.page_header + .section_content
+			background-position 100% 250px
+		.buttons
+			margin-top 40px
+			.button
+				font-size 12px
+				padding 14px 24px
