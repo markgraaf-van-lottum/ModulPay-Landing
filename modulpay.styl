@@ -89,8 +89,10 @@ a
 		font-weight 500
 		box-sizing border-box
 		padding 10px 22px
-		&.mobile
-			display none
+		&:last-child
+			margin-right 75px
+		// &.mobile
+		// 	display none
 
 section
 	max-width 1440px
@@ -456,12 +458,12 @@ section
 	.page_header a
 		padding 10px 20px
 
-@media screen and (max-width: 950px)
-	.page_header a
-		&:not(.mobile):not(.logo)
-			display none
-		&.mobile
-			display block
+// @media screen and (max-width: 950px)
+// 	.page_header a
+// 		&:not(.mobile):not(.logo)
+// 			display none
+// 		&.mobile
+// 			display block
 
 @media screen and (max-width: 900px)
 	h2
@@ -479,6 +481,8 @@ section
 	.section1
 		.slogan
 			font-size 32px
+		.page_header a:last-child
+			margin-right 40px
 		.page_header + .section_content
 			background-position-x 100%
 
@@ -617,10 +621,11 @@ section
 			&:first-child
 				margin 0 8px 0 0
 
-
 @media screen and (max-width: 650px)
 	.section1
 		background-position-x 42%
+		.page_header a:last-child
+			margin-right 0
 		h1
 			font-size 34px
 		.slogan
@@ -704,10 +709,10 @@ section
 @media screen and (max-width: 444px)
 	h2
 		margin-bottom 30px
-	.page_header a
-		padding 10px
-		padding-right 5px
-		font-size 13px
+	// .page_header a
+	// 	padding 10px
+	// 	padding-right 5px
+	// 	font-size 13px
 	.section1
 		padding-bottom 40px
 		background-position-x 44%
@@ -721,7 +726,8 @@ section
 			.logo
 				width 160px
 				height 28px
-			a.mobile
+			// a.mobile
+			a
 				position absolute
 				top 32px
 				right 10px

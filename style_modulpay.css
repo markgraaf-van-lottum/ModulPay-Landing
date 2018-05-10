@@ -146,8 +146,8 @@ a {
   box-sizing: border-box;
   padding: 10px 22px;
 }
-.page_header a.mobile {
-  display: none;
+.page_header a:last-child {
+  margin-right: 75px;
 }
 section {
   max-width: 1440px;
@@ -611,14 +611,6 @@ section {
     padding: 10px 20px;
   }
 }
-@media screen and (max-width: 950px) {
-  .page_header a:not(.mobile):not(.logo) {
-    display: none;
-  }
-  .page_header a.mobile {
-    display: block;
-  }
-}
 @media screen and (max-width: 900px) {
   h2 {
     margin-bottom: 36px;
@@ -636,6 +628,9 @@ section {
   }
   .section1 .slogan {
     font-size: 32px;
+  }
+  .section1 .page_header a:last-child {
+    margin-right: 40px;
   }
   .section1 .page_header + .section_content {
     background-position-x: 100%;
@@ -847,6 +842,9 @@ section {
   .section1 {
     background-position-x: 42%;
   }
+  .section1 .page_header a:last-child {
+    margin-right: 0;
+  }
   .section1 h1 {
     font-size: 34px;
   }
@@ -966,11 +964,6 @@ section {
   h2 {
     margin-bottom: 30px;
   }
-  .page_header a {
-    padding: 10px;
-    padding-right: 5px;
-    font-size: 13px;
-  }
   .section1 {
     padding-bottom: 40px;
     background-position-x: 44%;
@@ -989,7 +982,7 @@ section {
     width: 160px;
     height: 28px;
   }
-  .section1 .page_header a.mobile {
+  .section1 .page_header a {
     position: absolute;
     top: 32px;
     right: 10px;
@@ -997,7 +990,7 @@ section {
     padding: 0;
     border-bottom: 1px solid;
   }
-  .section1 .page_header a.mobile:last-child {
+  .section1 .page_header a:last-child {
     top: 70px;
   }
   .section1 .page_header + .section_content {
