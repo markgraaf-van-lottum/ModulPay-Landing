@@ -1,5 +1,5 @@
 @import 'nib'
-@import 'variables.styl'
+@import 'variables'
 
 // Common
 ::-webkit-scrollbar
@@ -38,6 +38,8 @@ section
 
 html
 body	
+	height 100%
+	min-height 100%
 	font-family ffn
 	font-size 14px
 	color #000
@@ -51,7 +53,7 @@ flex
 h1
 h2
 .slogan
-	font-family Roboto Slab
+	font-family RobotoSlab
 	color #243036
 h1
 	font-size 48px
@@ -432,9 +434,25 @@ section
 		background linear-gradient(270deg, #5E81DE 0%, #58C0BA 100%), #D3D808
 
 
+// Оплата завершена успешно
+.payment-success
+	height 100%
+	display flex
+	flex-direction column
+	justify-content center
+	padding 0 10%
+	color #49555C
+	font-size 5.5vw
+	font-weight 500
+	line-height 1.5
+	text-align center
+	text-transform uppercase
+
+
 // Иконка "Телефон" и "Крестик"
 .icon-phone
 .icon-close
+.icon-round-check
 	font-family "mb-icon-font-3" !important
 	font-style normal !important
 	font-weight normal !important
@@ -451,9 +469,34 @@ section
 	margin-bottom 16px
 .icon-close::before
 	content "\77"
+.icon-round-check::before
+	content "\36"
+	display block
+	margin-bottom 6vh
+	font-size 18vw
+	color #6CA300
 
 
 // АДАПТИВНОСТЬ
+
+// успешная оплата
+@media screen and (min-width: 450px)
+	.payment-success
+		font-size 4vw
+	.icon-round-check::before
+		font-size 14vw
+@media screen and (min-width: 600px)
+	.payment-success
+		font-size 3vw
+	.icon-round-check::before
+		font-size 11vw
+@media screen and (min-width: 800px)
+	.payment-success
+		font-size 2vw
+	.icon-round-check::before
+		font-size 8vw
+
+
 @media screen and (max-width: 980px)
 	.page_header a
 		padding 10px 20px
@@ -709,10 +752,6 @@ section
 @media screen and (max-width: 444px)
 	h2
 		margin-bottom 30px
-	// .page_header a
-	// 	padding 10px
-	// 	padding-right 5px
-	// 	font-size 13px
 	.section1
 		padding-bottom 40px
 		background-position-x 44%
@@ -726,7 +765,6 @@ section
 			.logo
 				width 160px
 				height 28px
-			// a.mobile
 			a
 				position absolute
 				top 32px

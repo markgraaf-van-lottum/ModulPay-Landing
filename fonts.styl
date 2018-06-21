@@ -1,5 +1,5 @@
-@import 'nib'
-@require 'variables.styl'
+@require 'nib'
+@require 'variables'
 
 
 // Вес шрифта:
@@ -65,6 +65,24 @@ fontName = "Roboto"
 	font-woff(fontPath, fontName, "Medium")
 	font-weight 500
 	font-style normal
+
+//Bold
+@font-face
+	font-woff(fontPath, fontName, "Bold")
+	font-weight 700
+	font-style normal
+
+@font-face
+	font-woff(fontPath, fontName, "Bold")
+	font-weight bold
+	font-style normal
+
+
+//==========================================================================================
+// Roboto Slab
+//==========================================================================================
+fontPath = "fonts/robotoslab/"
+fontName = "RobotoSlab"
 
 //Bold
 @font-face

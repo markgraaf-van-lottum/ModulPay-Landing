@@ -41,6 +41,18 @@
   font-weight: bold;
   font-style: normal;
 }
+@font-face {
+  font-family: "RobotoSlab";
+  src: url("fonts/robotoslab/RobotoSlab-Bold.woff2") format('woff2'), url("fonts/robotoslab/RobotoSlab-Bold.woff") format('woff');
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "RobotoSlab";
+  src: url("fonts/robotoslab/RobotoSlab-Bold.woff2") format('woff2'), url("fonts/robotoslab/RobotoSlab-Bold.woff") format('woff');
+  font-weight: bold;
+  font-style: normal;
+}
 ::-webkit-scrollbar {
   height: 12px;
   width: 12px;
@@ -80,6 +92,8 @@ section {
 }
 html,
 body {
+  height: 100%;
+  min-height: 100%;
   font-family: 'Roboto', sans-serif, Arial;
   font-size: 14px;
   color: #000;
@@ -99,7 +113,7 @@ flex {
 h1,
 h2,
 .slogan {
-  font-family: Roboto Slab;
+  font-family: RobotoSlab;
   color: #243036;
 }
 h1 {
@@ -585,8 +599,37 @@ section {
   background: -ms-linear-gradient(180deg, #5e81de 0%, #58c0ba 100%), #d3d808;
   background: linear-gradient(270deg, #5e81de 0%, #58c0ba 100%), #d3d808;
 }
+.payment-success {
+  height: 100%;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: box;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -moz-box-orient: vertical;
+  -o-box-orient: vertical;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -moz-box-pack: center;
+  -o-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  padding: 0 10%;
+  color: #49555c;
+  font-size: 5.5vw;
+  font-weight: 500;
+  line-height: 1.5;
+  text-align: center;
+  text-transform: uppercase;
+}
 .icon-phone,
-.icon-close {
+.icon-close,
+.icon-round-check {
   font-family: "mb-icon-font-3" !important;
   font-style: normal !important;
   font-weight: normal !important;
@@ -605,6 +648,37 @@ section {
 }
 .icon-close::before {
   content: "\77";
+}
+.icon-round-check::before {
+  content: "\36";
+  display: block;
+  margin-bottom: 6vh;
+  font-size: 18vw;
+  color: #6ca300;
+}
+@media screen and (min-width: 450px) {
+  .payment-success {
+    font-size: 4vw;
+  }
+  .icon-round-check::before {
+    font-size: 14vw;
+  }
+}
+@media screen and (min-width: 600px) {
+  .payment-success {
+    font-size: 3vw;
+  }
+  .icon-round-check::before {
+    font-size: 11vw;
+  }
+}
+@media screen and (min-width: 800px) {
+  .payment-success {
+    font-size: 2vw;
+  }
+  .icon-round-check::before {
+    font-size: 8vw;
+  }
 }
 @media screen and (max-width: 980px) {
   .page_header a {
