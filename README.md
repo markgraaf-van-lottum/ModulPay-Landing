@@ -1,2 +1,2 @@
-# Лендинг сервиса ModulPay
-https://meltten.github.io/ModulPay-Landing
+# ModulPay Landing
+## [смотреть](https://markgraaf-van-lottum.github.io/ModulPay-Landing)
